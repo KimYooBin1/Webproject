@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>숨어있는 강아지 찾기</title>
+<style>
+	@import url(20191566-김유빈-프로젝트1.css);
+</style>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript" src="20191566-김유빈-프로젝트2.js"></script>
+</script>
+</head>
+<body onload="load()">				<!--onload를 통해 웹싸이트가 로딩 되자마자 게임 플레이 시간을 사용자에게 입력받는다.-->
+<h3>숨어있는 강아지 찾기</h3>
+<hr>
+<div>
+	<audio id = "ending"src="ending.mp3"></audio>		<!--게임이 진행되는동안 쓸 음원 파일 설정-->
+	<audio id = "wranswer" src="bi.mp3"></audio>
+	<audio id = "clock" src="clock.mp3"></audio>
+	<audio id = "ANSWER" src="chimes.mp3"></audio>
+	<p id="state">게임 시작</p>													<!--게임이 진행되는 동안 점수나 남은 시간을 출력할 상태창 설정-->
+	<p>남은 수 <span id="answer">0</span></p>
+	<p>남은 목숨 5  / <span id="life">5</span></p>
+	<p>시간 <span id="time">0</span></p>
+</div> 
+<div>
+	<table>
+	<tr>
+		<td><img id="0" src= "2.jpg"width="100" height="100"></td>	
+		<td><img id="1" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="2" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="3" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="4" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="5" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="6" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="7" src= "2.jpg"width="100" height="100"></td>
+	</tr>
+	<tr>
+		<td><img id="8" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="9" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="10" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="11" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="12" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="13" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="14" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="15" src= "2.jpg"width="100" height="100"></td>
+	</tr>
+	<tr>
+		<td><img id="16" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="17" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="18" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="19" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="20" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="21" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="22" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="23" src= "2.jpg"width="100" height="100"></td>
+	</tr>
+	<tr>
+		<td><img id="24" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="25" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="26" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="27" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="28" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="29" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="30" src= "2.jpg"width="100" height="100"></td>
+		<td><img id="31" src= "2.jpg"width="100" height="100"></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
